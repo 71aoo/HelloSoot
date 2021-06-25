@@ -1,3 +1,4 @@
 .idea
 HelloSoot.iml
 target/
+.DS_Store
