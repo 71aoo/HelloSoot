@@ -1,0 +1,26 @@
+digraph "CGExampleCG" {
+    "<ExampleClass.CGExample: void main(java.lang.String[])>";
+    "<ExampleClass.CGExample: void doCall()>";
+    "<ExampleClass.CGExample: void main(java.lang.String[])>"->"<ExampleClass.CGExample: void doCall()>";
+    "<ExampleClass.B: java.lang.String foo(java.lang.String)>";
+    "<ExampleClass.CGExample: void doCall()>"->"<ExampleClass.B: java.lang.String foo(java.lang.String)>";
+    "<ExampleClass.B: void <init>()>";
+    "<ExampleClass.CGExample: void doCall()>"->"<ExampleClass.B: void <init>()>";
+    "<java.lang.Object: void <init>()>";
+    "<ExampleClass.B: void <init>()>"->"<java.lang.Object: void <init>()>";
+    "<java.lang.Object: void finalize()>";
+    "<java.lang.Object: void <init>()>"->"<java.lang.Object: void finalize()>";
+    "<ExampleClass.C: java.lang.String foo(java.lang.String)>";
+    "<ExampleClass.CGExample: void doCall()>"->"<ExampleClass.C: java.lang.String foo(java.lang.String)>";
+    "<ExampleClass.C: void <init>()>";
+    "<ExampleClass.CGExample: void doCall()>"->"<ExampleClass.C: void <init>()>";
+    "<ExampleClass.C: void <init>()>"->"<ExampleClass.B: void <init>()>";
+    "<ExampleClass.B: void <init>()>"->"<java.lang.Object: void <init>()>";
+    "<java.lang.Object: void <init>()>"->"<java.lang.Object: void finalize()>";
+    "<ExampleClass.CGExample: void doCall()>"->"<ExampleClass.B: java.lang.String foo(java.lang.String)>";
+    "<ExampleClass.D: void <init>()>";
+    "<ExampleClass.CGExample: void doCall()>"->"<ExampleClass.D: void <init>()>";
+    "<ExampleClass.D: void <init>()>"->"<ExampleClass.B: void <init>()>";
+    "<ExampleClass.B: void <init>()>"->"<java.lang.Object: void <init>()>";
+    "<java.lang.Object: void <init>()>"->"<java.lang.Object: void finalize()>";
+}
